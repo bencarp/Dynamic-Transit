@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="indexstyles.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link rel="apple-touch-icon" href="Logo120.png" sizes="120x120">
+        <link rel="shortcut icon" href="Logo120.png" sizes="120x120">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <title>D-Transit</title>
+        <script>if (window.navigator.standalone) {
+            document.write("<style>#maindiv{padding-top:20px;background-color: #6AB0FF}</style>");
+            //or
+            $("#maindiv").addClass("standalone");
+            }
+        </script>
+        <script src="addtohomescreen.js"></script>
+        <script>
+            addToHomescreen();
+        </script>
+    </head>
+    <body>
+        <div id="statusbar"> </div>
+        <h1>Was gibt's?</h1>
+        <form action="formular.html" method="post">
+            <textarea rows="4" cols="20" placeholder="Der Busfahrer war äußerst unhöflich :("></textarea>
+            <p>Mach ein Beweisfoto!</p>
+            <input id="takePictureField" type="file" value="Foto machen" accept="image/*" />
+            <input id="geotag" type="checkbox" name="location" value="On" checked>  Ortungsdienste verwenden</input>
+            <script>
+                navigator.geolocation.getCurrentPosition(function(position){
+                // wenn Position ermittelt werden konnte, liefert
+                //'position.coords.latitude' und 'position.coords.longitude'
+                //die entsprechenden Längen- und Breitengrade
+            }, function () {
+
+            })
+            </script>
+            <input id="schicken" type="submit" value="Senden">
+        </form>
+    </body>
+</html>

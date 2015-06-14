@@ -1,0 +1,95 @@
+body {
+    background-color: #6AB0FF;
+}
+
+.standalone{
+    padding-top: 20px;
+    background-color: #6AB0FF;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: monospace;
+    padding-right: 0px;
+    padding-left: 0px;
+    top: 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 25px;
+    font-family: monospace;
+    text-align: center;
+}
+
+p {
+    font-size: 25px;
+    font-family: monospace;
+    top: 0;
+}
+
+textarea {
+    width: 100%;
+    font-size: 20px;
+    font-family: monospace;
+    padding-top: 0px;
+    border-color: white;
+    -webkit-appearance: none;
+    margin: auto;
+    padding-right: 1;
+    padding-bottom: 0;
+    right: 0;
+
+}
+
+#geotag {
+    font-family: monospace;
+    font-size: 15px;
+    margin-top: 10px;
+
+}
+
+#takePictureField {
+    width: 100%;
+    text-align: center;
+    height: 20px;
+    font-size: 20px;
+    font-family: monospace;
+    top: 0;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    background-color: darkgoldenrod;
+    -webkit-appearance: none;
+}
+
+#schicken {
+    position: fixed;
+    height: 45px;
+    width: 100%;
+    font-size: 40px;
+    bottom: 0;
+    left: 0;
+    -webkit-appearance: none;
+    border-radius: 0;
+    background-color: gold;
+    border-color: gold;
+
+}
+
+#indexzurueck {
+    height: 30px;
+    width: 100%;
+    font-family: monospace;
+    -webkit-appearance: none;
+    left: 0;
+    border: 0;
+    background-color: gold;
+    font-size: 18px;
+    text-align: left;
+}
+
+.fb-share-button {
+    width: 100px;
+
+}
+
